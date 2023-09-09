@@ -1,0 +1,162 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #333;
+    z-index: 0;
+}
+
+.container {
+    background-image: url("/gh/bg.png");
+    width: 420px;
+    height: 420px;
+    transform: scale(1.5);    
+    border-radius: 5px;
+    z-index: 0;
+    
+}
+
+.questions p {
+    position: absolute; font-size: medium; 
+    background-color: white; color: black; 
+    max-width: 150px;
+    transform: translateX(110px) translateY(130px);
+
+    border: 2px solid hsl(0, 0%, 0%);
+    border-radius: 10px;
+    border-color: black;
+    padding: 2px;
+
+    z-index: 2;
+}
+
+.petImage {
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    clip: rect(40px, 300px, 345px, 80px);
+    transform: scale(.3) translateX(260px) translateY(30px);
+    z-index: 1;
+}
+
+.petImage img {
+    width: 100%;
+    height: 100%;
+    background-image: url("/Game1_try/gh/pet01.png");
+}
+
+.edImage {
+    position: absolute;
+    width: 222px;
+    height: 200px;
+    transform: scale(1.5) translateY(12px);   
+    
+}
+
+.edImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.btn-box {
+    /* background-color: red; */
+   
+    grid-template-columns: repeat(3,auto);
+    gap: 10px;
+    margin-top: 20px;
+    z-index: 2;
+    
+    position: absolute;
+    top: 235px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 50px;
+    right: 100px;
+    max-width: 220px;
+}
+
+.btn {
+    background-color: white;
+    border: 1px solid hsl(0, 0%, 0%);
+    border-radius: 5px;
+    
+    font-size: x-small;
+    color: rgb(0, 0, 0);
+    max-width: 220px;
+    max-height: 80px;
+}
+
+.btn:hover {
+    border-color: rgb(206, 206, 18);
+    cursor: pointer;
+}
+
+.opening {
+    position: absolute;
+    
+    width: 315px;
+    height: 272px;
+    transform: scale(1.1) translateY(15px);
+    
+    z-index: 3;
+
+    
+}
+
+.opening button{
+    background-image: url("/gh/opening.png");
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+.displayScore {
+    transform: translateX(180px) translateY(210px);
+    font-size: 45px;
+    display: none;
+    z-index: 5;
+    
+}
+
+
+
+.msg {
+    position: absolute;
+    transform: translateX(100px) translateY(345px);
+    background-color: white;
+    border: 1px solid hsl(0, 0%, 0%);
+    border-radius: 4px;
+    max-width: 360px;
+    max-height: 80px;
+    z-index: 0;
+    display: none;
+}
+
+.msg p {
+    margin: 10px;
+    font-size: small;
+}
+
+
+.Restart {
+    position: absolute;
+    transform: translateY(175px);
+    z-index: 0;
+}
+.RestartBtn:hover {
+    border-color: rgb(118, 18, 206);
+    background-color: aliceblue;
+    transform: scale(1.5);
+    cursor: pointer;
+}
